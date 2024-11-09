@@ -20,11 +20,12 @@ const ProjectUpdatesFeed = ({ projectId, updates, isAuthor }) => {
   const dispatch = useDispatch();
 
   const handlePostUpdate = () => {
-    if (newUpdate.trim()) {
+    if (newUpdate) {
       dispatch(addPost({ projectId, content: newUpdate }));
       setNewUpdate("");
       window.location.reload();
     }
+    console.log("Post added: ", newUpdate);
   };
 
   const handleLike = (updateId) => {
