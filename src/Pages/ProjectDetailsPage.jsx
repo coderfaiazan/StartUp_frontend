@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   CameraIcon,
   PencilIcon,
@@ -23,7 +23,7 @@ import {
 
 function ProjectDetailsPage() {
   const dispatch = useDispatch();
-  const navigate = Navigate();
+  const navigate = useNavigate();
   const [showDonationModal, setShowDonationModal] = useState(false);
   const [donationConfirmation, setDonationConfirmation] = useState(null);
   const [isEditingCoverImage, setIsEditingCoverImage] = useState(false);
