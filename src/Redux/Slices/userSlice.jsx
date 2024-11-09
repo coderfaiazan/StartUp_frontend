@@ -94,7 +94,7 @@ export const getUserData = createAsyncThunk(
       const response = await fetch(`${server_url}/api/v1/user/me`, {
         method: "GET",
         headers: {
-          "Authorization": `Bearer ${token}`,
+          // "Authorization": `Bearer ${token}`,
           "Content-Type": "application/json"
         },
         credentials: "include", // Ensures cookies are sent with the request

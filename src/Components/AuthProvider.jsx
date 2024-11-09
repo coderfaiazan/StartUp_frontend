@@ -12,15 +12,17 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Check if the user is already logged in (e.g., by checking for a token in cookies)
-    const user = JSON.parse(localStorage.getItem("user"));
-    if (user) {
-      try {
-        dispatch(getUserData());
-      } catch (error) {
+    const curruser = JSON.parse(localStorage.getItem("user"));
+    if (!user) {
+      if (curruser) {
+        try {
+          dispatch(getUserData());
+        } catch (error) {
+          navigate("/signin");
+        }
+      } else {
         navigate("/signin");
       }
-    } else {
-      navigate("/signin");
     }
   }, [dispatch]);
 
