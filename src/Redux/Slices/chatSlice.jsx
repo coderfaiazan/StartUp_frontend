@@ -4,6 +4,8 @@ import axios from "axios";
 const VULTR_API_BASE_URL = import.meta.env.VITE_CHATBOT_SERVER_URL;
 const VULTR_API_KEY = import.meta.env.VITE_VULTR_API_KEY;
 const COLLECTION_ID = import.meta.env.VITE_COLLECTION_ID;
+const server_url = import.meta.env.VITE_SERVER_URL;
+
 
 // Async thunk for creating a vector store collection
 export const createVectorStoreCollection = createAsyncThunk(
@@ -51,7 +53,7 @@ export const createCollectionItem = createAsyncThunk(
       //   description,
       // });
       const response = await axios.post(
-        `${VULTR_API_BASE_URL}/api/v1/createCollectionItem`,
+        `${server_url}/api/v1/createCollectionItem`,
         data
       );
       console.log("Collection item created successfully:", response.data);
