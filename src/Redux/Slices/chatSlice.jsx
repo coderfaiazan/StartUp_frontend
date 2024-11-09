@@ -51,7 +51,7 @@ export const createCollectionItem = createAsyncThunk(
       //   description,
       // });
       const response = await axios.post(
-        `http://localhost:7000/api/v1/createCollectionItem`,
+        `${VULTR_API_BASE_URL}/api/v1/createCollectionItem`,
         data
       );
       console.log("Collection item created successfully:", response.data);
