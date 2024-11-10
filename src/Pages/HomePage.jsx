@@ -23,85 +23,6 @@ function HomePage() {
     fetchProjects();
   }, []);
 
-  // const featuredProjects = [
-  //   {
-  //     _id: "672b7240da129d7a75b2c3ca",
-  //     title: "Sustainable Development Goals",
-  //     description:
-  //       "Sustainable development is a comprehensive approach to economic, social, and environmental progress that aims to meet the needs of the present without compromising the ability of future generations to meet their own needs. Below are 10 key subtopics that can serve as the basis for website content:",
-  //     category: "Education",
-  //     collaborators: [
-  //       {
-  //         $oid: "67267daf73f17b406875fce7",
-  //       },
-  //     ],
-  //     fundingGoal: 1000000,
-  //     amountRaised: 0,
-  //     deadline: "2025-02-14T00:00:00.000Z",
-  //     mediaurls: {
-  //       public_id: "STARTUP/ambnqpflbww6bfmeahc1",
-  //       secure_url:
-  //         "https://res.cloudinary.com/faizandb/image/upload/v1730900754/STARTUP/ambnqpflbww6bfmeahc1.jpg",
-  //     },
-  //     status: "active",
-  //     rewards: [],
-  //     transactions: [],
-  //     posts: [],
-  //     createdAt: "2024-11-06T13:42:24.993Z",
-  //     updatedAt: "2024-11-06T13:42:29.146Z",
-  //   },
-  //   {
-  //     _id: "672b72d3da129d7a75b2c3f0",
-  //     title: "Test Upload 4",
-  //     description: " test",
-  //     category: "Technology",
-  //     collaborators: [
-  //       {
-  //         $oid: "67267daf73f17b406875fce7",
-  //       },
-  //     ],
-  //     fundingGoal: 1,
-  //     amountRaised: 0,
-  //     deadline: "2024-11-07T00:00:00.000Z",
-  //     mediaurls: {
-  //       public_id: "STARTUP/oxv2cuphhttx4tm48iul",
-  //       secure_url:
-  //         "https://res.cloudinary.com/faizandb/image/upload/v1730900899/STARTUP/oxv2cuphhttx4tm48iul.jpg",
-  //     },
-  //     status: "active",
-  //     rewards: [
-  //       {
-  //         $oid: "672b74f5da129d7a75b2c47c",
-  //       },
-  //       {
-  //         $oid: "672b7574da129d7a75b2c4b5",
-  //       },
-  //     ],
-  //     transactions: [],
-  //     posts: [
-  //       {
-  //         $oid: "672b75c6da129d7a75b2c4ce",
-  //       },
-  //     ],
-  //     createdAt: "2024-11-06T13:44:51.236Z",
-  //   },
-  //   {
-  //     _id: "672c98607f9014c5674d9207",
-  //     title: "Rockband",
-  //     description: " Rock band",
-  //     category: "Music",
-  //     fundingGoal: 1000,
-  //     amountRaised: 0,
-  //     deadline: "2024-11-17T00:00:00.000Z",
-  //     mediaurls: {
-  //       public_id: "STARTUP/a2cy5re7ygebir2dm8br",
-  //       secure_url:
-  //         "https://res.cloudinary.com/faizandb/image/upload/v1730976051/STARTUP/a2cy5re7ygebir2dm8br.jpg",
-  //     },
-  //     createdAt: "2024-11-07T10:37:20.799Z",
-  //   },
-  // ];
-
   return (
     <div>
       {/* Hero Section */}
@@ -113,16 +34,16 @@ function HomePage() {
           <p className="text-xl mb-8">
             Join our community of creators and backers to bring ideas to life.
           </p>
-          <div className="space-x-4">
+          <div className="space-x-4 flex">
             <Link
               to="/start-project"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition duration-300"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 sm:text-md text-sm"
             >
               Start a Project
             </Link>
             <Link
               to="/explore"
-              className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-2 px-6 rounded-full transition duration-300"
+              className="bg-white hover:bg-gray-100 text-blue-600 font-bold py-2 px-6 rounded-full transition duration-300 sm:text-md text-sm"
             >
               Discover Projects
             </Link>
