@@ -124,7 +124,7 @@ const ProfilePage = () => {
                   onChange={(e) =>
                     setEditedUser({ ...editedUser, name: e.target.value })
                   }
-                  className="text-2xl font-bold mb-2 border-b-2 border-gray-300 focus:border-blue-500 outline-none capitalize"
+                  className="text-2xl w-40 sm:w-fit font-bold mb-2 border-b-2 border-gray-300 focus:border-blue-500 outline-none capitalize"
                 />
               ) : (
                 <h2 className="text-2xl font-bold mb-2 capitalize">
