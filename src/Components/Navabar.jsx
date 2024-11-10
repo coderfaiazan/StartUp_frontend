@@ -169,24 +169,24 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="sm:hidden bg-blue-600">
           <div className="pt-2 pb-3 space-y-1">
-            <Na
+            <Link
               to="/"
               className="text-white hover:bg-blue-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
             >
               Home
-            </Na>
-            <Na
+            </Link>
+            <Link
               to="/explore"
               className="text-blue-200 hover:bg-blue-700 hover:text-white block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
             >
               Explore
-            </Na>
-            <Na
+            </Link>
+            <Link
               to="/start-project"
               className="text-blue-200 hover:bg-blue-700 hover:text-white block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
             >
               Start a Project
-            </Na>
+            </Link>
           </div>
           <div className="pt-4 pb-3 border-t border-blue-700">
             {isLoggedIn && user != null ? (
