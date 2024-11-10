@@ -100,7 +100,7 @@ export const addPost = createAsyncThunk(
     const { user } = getState().user;
     if (user && user._id) {
       try {
-        const response = await fetch(`${server_url}/api/v1/project/posts`, {
+        const response = await fetch(`/api/v1/project/posts`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

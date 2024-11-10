@@ -1,6 +1,7 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
+      { "source": "/(.*)", "destination": "/index.html" },
+      { "source": "/api/(.*)", "destination": "https://startup-backend-2j6x.onrender.com:7000/api/$1" }
     ]
   }
   
