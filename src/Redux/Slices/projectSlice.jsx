@@ -117,6 +117,7 @@ export const addPost = createAsyncThunk(
         }
 
         const result = await response.json();
+        console.log("Success Response:", result);
         return result; // Return the project data directly
       } catch (error) {
         return rejectWithValue(error.message || "Network error occurred");
