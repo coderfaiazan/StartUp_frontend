@@ -34,7 +34,7 @@ function HomePage() {
           <p className="text-xl mb-8">
             Join our community of creators and backers to bring ideas to life.
           </p>
-          <div className="space-x-4 flex">
+          <div className="space-x-4 flex justify-center">
             <Link
               to="/start-project"
               className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 sm:text-md text-sm"
